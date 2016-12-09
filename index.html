@@ -1,0 +1,955 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+
+
+<title>Website</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://project.dectar.com/fortaxi/images/logo/favicon111.png">
+<link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/layout.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/themes.css" rel="stylesheet" type="text/css" media="screen">
+
+<link href="css/styles.css" rel="stylesheet" type="text/css" media="screen">
+
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/jquery.jqplot.css" rel="stylesheet" type="text/css" media="screen">
+
+
+
+
+<link href="css/ui-elements.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/wizard.css" rel="stylesheet" type="text/css">
+<link href="css/sprite.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/gradient.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/developer.css" rel="stylesheet" type="text/css">
+<link href="css/developer_colors.css" rel="stylesheet" type="text/css">
+<link href="css/custom-dev-css.css" rel="stylesheet" type="text/css">
+
+
+
+<!--<link rel="stylesheet" type="text/css" href="css/ie/ie7.css" />
+<link rel="stylesheet" type="text/css" href="css/ie/ie8.css" />
+<link rel="stylesheet" type="text/css" href="css/ie/ie9.css" />-->
+
+
+
+
+
+
+</head>
+<body id="theme-default" class="full_block">
+<div id="left_bar" >
+    <div id="sidebar">
+        <div id="secondary_nav">
+            <ul id="sidenav" class="accordion_mnu collapsible">
+                <li>
+                    <a href="http://project.dectar.com/fortaxi/admin/dashboard/admin_dashboard" class="active">
+                        <span class="nav_icon computer_imac"></span> 
+						Dashboard                    </a>
+                </li>
+                <li>
+                    <h6 style="margin: 10px 0;padding-left:10px; font-size:13px; font-weight:bold;color:#333; text-transform:uppercase; ">Managements</h6>
+                </li>
+                				
+
+                    <li>
+                        <a href="/fortaxi/admin/dashboard/admin_dashboard" >
+                            <span class="nav_icon admin_user"></span>Admin<span class="up_down_arrow">&nbsp;</span>
+                        </a>
+                        <ul class="acitem" style="display: none;">
+                            <li>
+                                <a href="admin/adminlogin/change_admin_password_form" >
+                                    <span class="list-icon">&nbsp;</span>Change Password                                </a>
+                            </li>
+                                                    </ul>
+                    </li>
+
+                    <li style="display:none;">  <a href="/fortaxi/admin/dashboard/admin_dashboard" ><span class="nav_icon user"></span>Subadmin 
+                            <span class="up_down_arrow">&nbsp;</span></a>
+                        <ul class="acitem" style="display: none;">
+                            <li><a href="admin/subadmin/display_sub_admin" ><span class="list-icon">&nbsp;</span>Subadmin List</a></li>
+                            <li><a href="admin/subadmin/add_sub_admin_form" ><span class="list-icon">&nbsp;</span>Add New Subadmin</a></li>
+                        </ul>
+                    </li>
+
+                				
+
+                		
+
+
+                                        <li>
+                            <a href="/fortaxi/admin/dashboard/admin_dashboard" >
+                                <span class="nav_icon globe"></span>  Location & Fare<span class="up_down_arrow">&nbsp;</span>
+                            </a>
+                            <ul class="acitem" style="display: none;">
+                                <li>
+                                    <a href="admin/location/display_location_list" >
+                                        <span class="list-icon">&nbsp;</span>Location List                                    </a>
+                                </li>
+                                                                    <li>
+                                        <a href="admin/location/add_edit_location" >
+                                            <span class="list-icon">&nbsp;</span>Add Location                                        </a>
+                                    </li>
+                                                                                                </ul>
+                        </li>  
+                                                            <li>
+                        <a href="/fortaxi/admin/dashboard/admin_dashboard" >
+                            <span class="nav_icon users"></span> Drivers<span class="up_down_arrow">&nbsp;</span>
+                        </a>
+                        <ul class="acitem" style="display: none;">
+                            <li>
+                                <a href="admin/drivers/display_driver_dashboard" >
+                                    <span class="list-icon">&nbsp;</span>Drivers Dashboard                                </a>
+                            </li>
+                            <li>
+                                <a href="admin/drivers/display_drivers_list" >
+                                    <span class="list-icon">&nbsp;</span>Drivers List                                </a>
+                            </li>
+                                                            <li>
+                                    <a href="admin/drivers/add_driver_form" >
+                                        <span class="list-icon">&nbsp;</span>Add Driver                                    </a>
+                                </li>
+                            						</ul>
+                    </li>
+                
+
+
+                				
+				
+                                    <li>
+                        <a href="/fortaxi/admin/dashboard/admin_dashboard" >
+                            <span class="nav_icon companies"></span> Make and Model<span class="up_down_arrow">&nbsp;</span>
+                        </a>
+                        <ul class="acitem" style="display: none;">
+                            <li>
+                                <a href="admin/brand/display_brand_list" >
+                                    <span class="list-icon">&nbsp;</span>Makers List                                </a>
+                            </li>
+                                                            <li>
+                                    <a href="admin/brand/add_brand_form" >
+                                        <span class="list-icon">&nbsp;</span>Add New Maker                                    </a>
+                                </li>
+                            							
+                            <li>
+                                <a href="admin/brand/display_model_list" >
+                                    <span class="list-icon">&nbsp;</span>Model List                                </a>
+                            </li>
+                                                            <li>
+                                    <a href="admin/brand/add_edit_model" >
+                                        <span class="list-icon">&nbsp;</span>Add New Model                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                 
+
+
+                                    <li>
+                        <a href="/fortaxi/admin/dashboard/admin_dashboard" >
+                            <span class="nav_icon users"></span> Users<span class="up_down_arrow">&nbsp;</span>
+                        </a>
+                        <ul class="acitem" style="display: none;">
+                            <li>
+                                <a href="admin/users/display_user_dashboard" >
+                                    <span class="list-icon">&nbsp;</span>Dashboard                                </a>
+                            </li>
+                            <li>
+                                <a href="admin/users/display_user_list" >
+                                    <span class="list-icon">&nbsp;</span>Users List                                </a>
+                            </li>
+							        <li>
+                                <a href="admin/users/display_user_list?user_type=deleted" >
+                                    <span class="list-icon">&nbsp;</span>Deleted Users List                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                
+                
+                                    <li>
+                        <a href="/fortaxi/admin/dashboard/admin_dashboard" >
+                            <span class="nav_icon car"></span> Rides<span class="up_down_arrow">&nbsp;</span>
+                        </a>
+                        <ul class="acitem" style="display: none;">
+							<li>
+                                <a href="admin/rides/ride_dashboard" >
+                                    <span class="list-icon">&nbsp;</span>Rides Dashboard                                </a>
+                            </li>
+                            <li>
+                                <a href="admin/rides/display_rides?act=Booked" >
+                                    <span class="list-icon">&nbsp;</span>Just Booked                                </a>
+                            </li>
+                            <li>
+                                <a href="admin/rides/display_rides?act=OnRide" >
+                                    <span class="list-icon">&nbsp;</span>On Rides                                </a>
+                            </li>
+                            <li>
+                                <a href="admin/rides/display_rides?act=Completed" >
+                                    <span class="list-icon">&nbsp;</span>Completed Rides                                </a>
+                            </li>
+                            <li>
+                                <a href="admin/rides/display_rides?act=Cancelled" >
+                                    <span class="list-icon">&nbsp;</span>Cancelled Rides                                </a>
+                            </li>
+							
+							<li>
+                                <a href="admin/rides/display_rides?act=Expired" >
+                                    <span class="list-icon">&nbsp;</span>Expired Rides                                </a>
+                            </li>
+							
+							<li>
+                                <a href="admin/rides/cancel_ride" >
+                                    <span class="list-icon">&nbsp;</span>Cancel Ride                                </a>
+                            </li>
+                            <!---<li>
+                                    <a href="admin/rides/display_rides?act=All" >
+                                            <span class="list-icon">&nbsp;</span>All Rides
+                                    </a>
+                            </li> -->
+                        </ul>
+                    </li>
+                
+
+
+
+
+                                    <li>
+                        <a href="/fortaxi/admin/dashboard/admin_dashboard" >
+                            <span class="nav_icon application_put_co"></span>Vehicles <span class="up_down_arrow">&nbsp;</span>
+                        </a>
+                        <ul class="acitem" style="display: none;">
+                            <li>
+                                <a href="admin/vehicle/display_vehicle_list" >
+                                    <span class="list-icon">&nbsp;</span>Vehicle Type List                                </a>
+                            </li>
+                                                            <li>
+                                    <a href="admin/vehicle/add_edit_vehicle_type_form" >
+                                        <span class="list-icon">&nbsp;</span>Add New Vehicle Type                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                 
+
+                                    <li>
+                        <a href="admin/reviews/display_reviews_options_list" >
+                            <span class="nav_icon feed_sl">&nbsp;</span>Review Settings                        </a>
+                    </li>
+                
+
+
+                                    <li>
+                        <a href="/fortaxi/admin/dashboard/admin_dashboard" >
+                            <span class="nav_icon documents"></span> Documents<span class="up_down_arrow">&nbsp;</span>
+                        </a>
+                        <ul class="acitem" style="display: none;">
+                            <li>
+                                <a href="admin/documents/display_documents_list" >
+                                    <span class="list-icon">&nbsp;</span>Documents List                                </a>
+                            </li>
+                                                            <li>
+                                    <a href="admin/documents/add_edit_document_form" >
+                                        <span class="list-icon">&nbsp;</span>Add New Documents                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                				
+
+                                    <li>
+                        <a href="/fortaxi/admin/dashboard/admin_dashboard" >
+                            <span class="nav_icon bestseller_sl"></span> Coupon Codes<span class="up_down_arrow">&nbsp;</span>
+                        </a>
+                        <ul class="acitem" style="display: none;">
+                            <li>
+                                <a href="admin/promocode/promocode" >
+                                    <span class="list-icon">&nbsp;</span>Coupon code List                                </a>
+                            </li>
+                                                            <li>
+                                    <a href="admin/promocode/add_promocode_form" >
+                                        <span class="list-icon">&nbsp;</span>Add Coupon code                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                
+
+                                    <li>
+                        <a href="/fortaxi/admin/dashboard/admin_dashboard" >
+                            <span class="nav_icon pencil"></span> Cancellation<span class="up_down_arrow">&nbsp;</span>
+                        </a>
+                        <ul class="acitem" style="display: none;">
+						                            <li>
+                                <a href="admin/cancellation/user_cancellation_types" >
+                                    <span class="list-icon">&nbsp;</span>User Cancellation reasons                                </a>
+                            </li>
+                                                            <li>
+                                    <a href="admin/cancellation/driver_cancellation_types" >
+                                        <span class="list-icon">&nbsp;</span>Driver Cancellation reasons                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                
+
+                                    <li>
+                        <a href="/fortaxi/admin/dashboard/admin_dashboard" >
+                            <span class="nav_icon ipad"></span>Banners<span class="up_down_arrow">&nbsp;</span>
+                        </a>
+                        <ul class="acitem" style="display: none;">
+                            <li>
+                                <a href="admin/banner/display_banner" >
+                                    <span class="list-icon">&nbsp;</span>Banners List                                </a>
+                            </li>
+                                                            <li>
+                                    <a href="admin/banner/add_banner_form" >
+                                        <span class="list-icon">&nbsp;</span>Add Banner                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                 
+
+                                    <li>
+                        <a href="/fortaxi/admin/dashboard/admin_dashboard" >
+                            <span class="nav_icon documents"></span> Pages<span class="up_down_arrow">&nbsp;</span>
+                        </a>
+                        <ul class="acitem" style="display: none;">
+                            <li>
+                                <a href="admin/cms/display_cms" ><span class="list-icon">&nbsp;</span>List of pages</a>
+                            </li>
+                                                            <li>
+                                    <a href="admin/cms/add_cms_form" ><span class="list-icon">&nbsp;</span>Add Main Page</a>
+                                </li>
+                                <li>
+                                    <a href="admin/cms/add_subpage_form" ><span class="list-icon">&nbsp;</span>Add Sub Page</a>
+                                </li>
+								<li>
+                                    <a href="admin/cms/add_landing_page_form" ><span class="list-icon">&nbsp;</span>Landing Page</a>
+                                </li>
+                                                    </ul>
+                    </li>
+
+                 
+
+                                
+                    <li>
+                        <a href="/fortaxi/admin/dashboard/admin_dashboard" >
+                            <span class="nav_icon mail"></span>Templates<span class="up_down_arrow">&nbsp;</span>
+                        </a>
+                        <ul class="acitem" style="display: none;">							
+                                                            <li>
+                                <a href="admin/templates/display_email_template" >
+                                    <span class="list-icon">&nbsp;</span>Email Template List                                </a>
+                            </li>
+                                                            <li>
+                                    <a href="admin/templates/add_email_template" >
+                                        <span class="list-icon">&nbsp;</span>Add Email Template                                    </a>
+                                </li>
+                            														
+														
+                            <li>
+                                <a href="admin/templates/display_subscribers_list" >
+                                    <span class="list-icon">&nbsp;</span>News Subscribers List                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                
+
+                
+
+
+                                    <li>
+                        <a href="admin/payment_gateway/display_payment_gateway_list" >
+                            <span class="nav_icon shopping_cart_2">&nbsp;</span>Payment Gateway                        </a>
+                    </li>
+                
+                                    <li>
+                        <a href="/fortaxi/admin/dashboard/admin_dashboard" >
+                            <span class="nav_icon users"></span> Notification<span class="up_down_arrow">&nbsp;</span>
+                        </a>
+                        <ul class="acitem" style="display: none;">
+                            <li>
+                                <a href="admin/notification/display_notification_user_list" >
+                                    <span class="list-icon">&nbsp;</span>Users                                </a>
+                            </li>
+                            <li>
+                                <a href="admin/notification/display_notification_driver_list" >
+                                    <span class="list-icon">&nbsp;</span>Drivers                                </a>
+                            </li>
+							<li>
+                                <a href="admin/notification/display_notification_templates"  >
+                                    <span class="list-icon">&nbsp;</span>Notification Templates                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                
+
+                				
+				
+				
+              
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div id="container">
+	<div id="header">
+		<div class="header_left">
+			<div class="logo">
+				<img >
+			</div>
+			<div id="responsive_mnu">
+				<a href="#responsive_menu" class="fg-button" id="hierarchybreadcrumb"><span class="responsive_icon"></span>Menu</a>
+				<div id="responsive_menu" class="hidden">
+					<ul>
+						<li>
+							<a href="http://project.dectar.com/fortaxi/admin/dashboard/admin_dashboard" class="active">
+								<span class="nav_icon computer_imac"></span> Dashboard								<span class="up_down_arrow">&nbsp;</span>
+							</a>
+						</li>
+						<li>
+							<h6 style="margin: 10px 0;padding-left:10px; font-size:13px; font-weight:bold;color:#333; text-transform:uppercase; ">Managements</h6>
+						</li>
+						
+												
+						 						
+												<li>
+							<a href="/fortaxi/admin/dashboard/admin_dashboard" >
+								<span class="nav_icon globe"></span>  Location & Fare<span class="up_down_arrow">&nbsp;</span>
+							</a>
+							<ul style="display: none;">
+								<li>
+									<a href="admin/location/display_location_list" >
+										Location List									</a>
+								</li>
+																<li>
+									<a href="admin/location/add_edit_location" >
+										Add Location									</a>
+								</li>
+															</ul>
+						</li>  
+												
+													<li>
+								<a href="/fortaxi/admin/dashboard/admin_dashboard" >
+									<span class="nav_icon users"></span> Drivers<span class="up_down_arrow">&nbsp;</span>
+								</a>
+								<ul style="display: none;">
+									<li>
+										<a href="admin/drivers/display_driver_dashboard" >
+											Drivers Dashboard										</a>
+									</li>
+									<li>
+										<a href="admin/drivers/display_drivers_list" >
+											Drivers List										</a>
+									</li>
+																			<li>
+											<a href="admin/drivers/add_driver_form" >
+												Add Driver											</a>
+										</li>
+																	</ul>
+							</li>
+												
+												
+													<li>
+								<a href="/fortaxi/admin/dashboard/admin_dashboard" >
+									<span class="nav_icon companies"></span> Make and Model<span class="up_down_arrow">&nbsp;</span>
+								</a>
+								<ul style="display: none;">
+									<li>
+										<a href="admin/brand/display_brand_list" >
+											Makers List										</a>
+									</li>
+																			<li>
+											<a href="admin/brand/add_brand_form" >
+												Add New Maker											</a>
+										</li>
+																
+									<li>
+										<a href="admin/brand/display_model_list" >
+											Model List										</a>
+									</li>
+																			<li>
+											<a href="admin/brand/add_edit_model" >
+												Add New Model											</a>
+										</li>
+																	</ul>
+							</li>
+												
+													<li>
+								<a href="/fortaxi/admin/dashboard/admin_dashboard" >
+									<span class="nav_icon users"></span> Users<span class="up_down_arrow">&nbsp;</span>
+								</a>
+								<ul style="display: none;">
+									<li>
+										<a href="admin/users/display_user_dashboard" >
+											Dashboard										</a>
+									</li>
+									<li>
+										<a href="admin/users/display_user_list" >
+											Users List										</a>
+									</li>
+									<li>
+										<a href="admin/users/display_user_list?user_type=deleted" >
+											Deleted Users List										</a>
+									</li>
+								</ul>
+							</li>
+												
+						 						
+													<li>
+								<a href="/fortaxi/admin/dashboard/admin_dashboard" >
+									<span class="nav_icon car"></span> Rides									<span class="up_down_arrow">&nbsp;</span>
+								</a>
+								<ul style="display: none;">
+									<li>
+										<a href="admin/rides/ride_dashboard" >
+											<span class="list-icon">&nbsp;</span>Rides Dashboard
+										</a>
+									</li>
+									<li>
+										<a href="admin/rides/display_rides?act=Booked" >
+											Just Booked										</a>
+									</li>
+									<li>
+										<a href="admin/rides/display_rides?act=OnRide" >
+											On Rides										</a>
+									</li>
+									<li>
+										<a href="admin/rides/display_rides?act=Completed" >
+											Completed Rides									</li>
+									<li>
+										<a href="admin/rides/display_rides?act=Cancelled" >
+											Cancelled Rides										</a>
+									</li>
+									
+									<li>
+										<a href="admin/rides/display_rides?act=Expired" >
+											Expired Rides										</a>
+									</li>
+									
+									<li>
+										<a href="admin/rides/cancel_ride" >
+											<span class="list-icon">&nbsp;</span>Cancel Ride										</a>
+									</li>
+								</ul>
+							</li>
+												
+													<li>
+								<a href="/fortaxi/admin/dashboard/admin_dashboard" >
+									<span class="nav_icon application_put_co"></span> Vehicles<span class="up_down_arrow">&nbsp;</span>
+								</a>
+								<ul style="display: none;">
+									<li>
+										<a href="admin/vehicle/display_vehicle_list" >
+											Vehicle Type List										</a>
+									</li>
+																			<li>
+											<a href="admin/vehicle/add_edit_vehicle_type_form" >
+												Add New Vehicle Type											</a>
+										</li>
+																	</ul>
+							</li>
+						 
+
+													<li>
+								<a href="admin/reviews/display_reviews_options_list" >
+									<span class="nav_icon feed_sl">&nbsp;</span>Review Settings								</a>
+							</li>
+												
+													<li>
+								<a href="/fortaxi/admin/dashboard/admin_dashboard" >
+									<span class="nav_icon documents"></span> Documents<span class="up_down_arrow">&nbsp;</span>
+								</a>
+								<ul style="display: none;">
+									<li>
+										<a href="admin/documents/display_documents_list" >
+											Documents List										</a>
+									</li>
+																			<li>
+											<a href="admin/documents/add_edit_document_form" >
+												Add New Documents											</a>
+										</li>
+																	</ul>
+							</li>
+										
+
+													<li>
+								<a href="/fortaxi/admin/dashboard/admin_dashboard" >
+									<span class="nav_icon bestseller_sl"></span> Coupon Codes<span class="up_down_arrow">&nbsp;</span>
+								</a>
+								<ul style="display: none;">
+									<li>
+										<a href="admin/promocode/promocode" >
+											Coupon code List										</a>
+									</li>
+																			<li>
+											<a href="admin/promocode/add_promocode_form" >
+												Add Coupon code											</a>
+										</li>
+																	</ul>
+							</li>
+												
+													<li>
+								<a href="/fortaxi/admin/dashboard/admin_dashboard" >
+									<span class="nav_icon pencil"></span> Cancellation									<span class="up_down_arrow">&nbsp;</span>
+								</a>
+								<ul style="display: none;">
+									<li>
+										<a href="admin/cancellation/user_cancellation_types" >
+											User Cancellation reasons										</a>
+									</li>
+																			<li>
+											<a href="admin/cancellation/driver_cancellation_types" >
+												Driver Cancellation reasons											</a>
+										</li>
+																	</ul>
+							</li>
+						
+
+													<li>
+								<a href="/fortaxi/admin/dashboard/admin_dashboard" >
+									<span class="nav_icon ipad"></span>Banners<span class="up_down_arrow">&nbsp;</span>
+								</a>
+								<ul style="display: none;">
+									<li>
+										<a href="admin/banner/display_banner" >
+											Banners List										</a>
+									</li>
+																			<li>
+											<a href="admin/banner/add_banner_form" >
+												Add Banner											</a>
+										</li>
+																	</ul>
+							</li>
+												
+													<li>
+								<a href="/fortaxi/admin/dashboard/admin_dashboard" >
+									<span class="nav_icon documents"></span> Pages<span class="up_down_arrow">&nbsp;</span>
+								</a>
+								<ul style="display: none;">
+									<li>
+										<a href="admin/cms/display_cms" >
+											List of pages										</a>
+									</li>
+																			<li>
+											<a href="admin/cms/add_cms_form" >
+												Add Main Page											</a>
+										</li>
+										<li>
+											<a href="admin/cms/add_subpage_form" >
+												Add Sub Page											</a>
+										</li>
+										<li>
+											<a href="admin/cms/add_landing_page_form" ><span class="list-icon">&nbsp;</span>Landing Page</a>
+										</li>
+																	</ul>
+							</li>
+						 
+
+						                
+							<li>
+								<a href="/fortaxi/admin/dashboard/admin_dashboard" >
+									<span class="nav_icon mail"></span>Templates<span class="up_down_arrow">&nbsp;</span>
+								</a>
+								<ul style="display: none;">
+									<li>
+										<a href="admin/templates/display_email_template" >
+											Email Template List										</a>
+									</li>
+																			<li>
+											<a href="admin/templates/add_email_template" >
+												Add Email Template											</a>
+										</li>
+																		
+																		
+									<li>
+										<a href="admin/templates/display_subscribers_list" >
+											News Subscribers List										</a>
+									</li>
+
+								</ul>
+							</li>
+												
+													<li>
+								<a href="admin/payment_gateway/display_payment_gateway_list" >
+									<span class="nav_icon shopping_cart_2">&nbsp;</span>Payment Gateway								</a>
+							</li>
+						
+													<li>
+								<a href="/fortaxi/admin/dashboard/admin_dashboard" >
+									<span class="nav_icon users"></span> Notification<span class="up_down_arrow">&nbsp;</span>
+								</a>
+								<ul style="display: none;">
+									<li>
+										<a href="admin/notification/display_notification_user_list" >
+											Users										</a>
+									</li>
+									<li>
+										<a href="admin/notification/display_notification_driver_list" >
+											Drivers										</a>
+									</li>
+
+								</ul>
+							</li>
+						
+
+												
+						
+										
+				
+				
+				
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="header_right">
+			<div id="user_nav" style="width: 300px;">
+				<ul>
+					<li class="user_thumb"><span class="icon"><img src="images/profile.png" width="30" height="30" alt="User"></span></li>
+					<li class="user_info">
+						<span class="user_name">
+							admindemo						</span>
+												<span>
+							<a >Visit Site</a> &#124; 
+							<a >Change Password</a> 
+						</span>
+											</li>
+					
+					<li class="logout"><a ><span class="icon"></span>Logout</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	
+	
+
+
+
+
+ 
+  
+<div id="content" style="clear:both;">
+    <div class="grid_container">		
+        <div class="grid_6">
+            <div class="widget_wrap">
+                <div class="widget_top">
+                    <span class="h_icon graph"><span style="display: none;"></span><canvas width="16" height="16"></canvas></span>
+                    <h6>Site Statistics</h6>
+                </div>
+                <div class="widget_content">
+                    <div class="stat_block">
+                        <div class="social_activities">								
+                            <a class="activities_s redbox" href="admin/users/display_user_list">
+                                <div class="block_label">
+                                    <span class="user_icon"></span><div class="clear"></div>
+									Users                                    <span>1788</span>
+                                </div>
+                            </a>								
+                            <a class="activities_s greenbox" href="admin/drivers/display_drivers_list">
+                                <div class="block_label">
+                                    <span class="store_icon"></span><div class="clear"></div>
+                                    Drivers                                    <span>1344</span>
+                                </div>
+                            </a>								
+                            <a class="activities_s bluebox" href="admin/promocode/display_promocode">
+                                <div class="block_label">
+                                    <span class="seller_icon"></span><div class="clear"></div>
+                                    Coupon Codes                                    <span>92</span>
+                                </div>	
+                            </a>								
+                            <a class="activities_s purplebox" href="admin/location/display_location_list">
+                                <div class="block_label">
+                                    <span class="seller_icon"></span><div class="clear"></div>
+                                    Locations                                    <span>1126</span>
+                                </div>	
+                            </a>								
+                            <a class="activities_s orangebox big" href="admin/revenue/display_site_revenue">
+                                <div class="block_label">
+                                    <span class="seller_icon"></span><div class="clear"></div>
+                                    Total Earnings 
+                                    <span> $ 2521272.96</span>
+                                </div>	
+                            </a>								
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>			
+        <div class="grid_6" >
+            <div class="widget_wrap">
+                <div class="widget_top">
+                    <span class="h_icon graph"><span style="display: none;"></span><canvas width="16" height="16"></canvas></span>
+                    <h6>Ride Statistics</h6>
+                </div>
+                <div class="widget_content">
+                    <div class="stat_block">
+                        <div class="social_activities">								
+                            <a class="activities_s redbox" href="admin/rides/display_rides?act=total">
+                                <div class="block_label">
+                                    <span class="store_icon"></span><div class="clear"></div>
+                                    Total Rides                                    <span>6102</span>
+                                </div>
+                            </a>								
+                            <a class="activities_s greenbox" href="admin/rides/display_rides?act=Booked">
+                                <div class="block_label">
+                                    <span class="store_icon"></span><div class="clear"></div>
+                                    Upcomming Rides                                    <span>3</span>
+                                </div>
+                            </a>								
+                            <a class="activities_s bluebox" href="admin/rides/display_rides?act=OnRide">
+                                <div class="block_label">
+                                    <span class="store_icon"></span><div class="clear"></div>
+                                    On Rides                                    <span>151</span>
+                                </div>
+                            </a>								
+                            <a class="activities_s purplebox" href="admin/rides/display_rides?act=riderCancelled">
+                                <div class="block_label">
+                                    <span class="store_icon"></span><div class="clear"></div>
+                                    Rider Denied                                    <span>792</span>
+                                </div>
+                            </a>								
+                            <a class="activities_s orangebox" href="admin/rides/display_rides?act=driverCancelled">
+                                <div class="block_label">
+                                    <span class="store_icon"></span><div class="clear"></div>
+                                    Driver Denied                                    <span>983</span>
+                                </div>
+                            </a>								
+                            <a class="activities_s pealbox" href="admin/rides/display_rides?act=Completed">
+                                <div class="block_label">
+                                    <span class="store_icon"></span><div class="clear"></div>
+                                    Completed Rides                                    <span>2931</span>
+                                </div>
+                            </a>								
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid_6">
+            <div class="widget_wrap">
+                <div class="widget_top">
+                    <span class="h_icon graph"></span>
+                    <h6>Rides</h6>
+                </div>
+                <div class="widget_content">
+                    <div class="stat_block">
+                        <div class="stat_chart">							
+                            <h4>Rides Count : 6102</h4>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Today                                        </td>
+                                        <td>
+                                            3                                        </td>
+                                                                            </tr>
+                                    <tr>
+                                        <td>
+                                            This Month                                        </td>
+                                        <td>
+                                            54                                        </td>
+                                                                            </tr>
+                                    <tr>
+                                        <td>
+                                            This Year                                        </td>
+                                        <td>
+                                            5400                                        </td>
+                                                                            </tr>
+                                </tbody>
+                            </table>
+                            <div class="pie_chart">
+                                                                <span class="inner_circle">48%</span>
+                                <span class="pie">2931/6102</span>
+                            </div>
+                            <div class="chart_label">
+                                <ul>
+                                    <li><span class="new_visits"></span>Completed Rides: 2931</li>
+                                    <li><span class="unique_visits"></span>Total Rides: 6102</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid_6">
+            <div class="widget_wrap">
+                <div class="widget_top">
+                    <span class="h_icon graph"></span>
+                    <h6>Drivers</h6>
+                </div>
+                <div class="widget_content">
+                    <div class="stat_block">	
+                        <div class="stat_chart">
+                            <h4>Drivers Count : 1344</h4>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Today                                        </td>
+                                        <td>
+                                            1                                        </td>
+                                                                            </tr>
+                                    <tr>
+                                        <td>
+                                            This Month                                        </td>
+                                        <td>
+                                            11                                        </td>
+                                                                            </tr>
+                                    <tr>
+                                        <td>
+                                            This Year                                        </td>
+                                        <td>
+                                            1149                                        </td>
+                                                                            </tr>
+                                </tbody>
+                            </table>
+							<div class="pie_chart">
+                                                                <span class="inner_circle">63.5%</span>
+                                <span class="pie">854/1344</span>
+                            </div>
+                            <div class="chart_label">
+                                <ul>
+                                    <li><span class="new_visits"></span>Active Drivers: 854</li>
+                                    <li><span class="unique_visits"></span>Total Drivers: 1344</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="clear"></span>
+                    <div class="grid_12">
+                <div class="widget_wrap">
+                    <div class="widget_top">
+                        <span class="h_icon graph"></span>
+                        <h6>Earnings</h6>
+                    </div>
+                    <div class="widget_content">
+                        <div class="data_widget black_g chart_wrap">
+                            <div id="chart1">
+                            </div>
+                            <div id="chart6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="clear"></span>
+            </div>
+    <span class="clear"></span>
+</div>
+
+</div>
+
+
+<p style="float:right;margin-top:15px; margin-right:30px;; margin-bottom:0;">Kevin R</p>
+</body>
+</html>
